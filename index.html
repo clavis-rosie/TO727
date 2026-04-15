@@ -5,84 +5,175 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Origins of Israelite Monotheism</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Open Sans', sans-serif; }
-        h1, h2, h3 { font-family: 'Merriweather', serif; }
-        .gradient-bg { background: linear-gradient(135deg, #1e3a8a 0%, #312e81 100%); }
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        h1, h2, h3, .serif { font-family: 'Merriweather', serif; }
+        .gradient-bg { background: linear-gradient(135deg, #0f172a 0%, #312e81 100%); }
+        
+        /* 아코디언(details) 애니메이션 및 기본 스타일 제거 */
+        details > summary { list-style: none; cursor: pointer; }
+        details > summary::-webkit-details-marker { display: none; }
+        details[open] summary ~ * { animation: slideDown 0.3s ease-in-out; }
+        @keyframes slideDown {
+            0% { opacity: 0; transform: translateY(-10px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-800 antialiased">
+<body class="text-slate-800 antialiased selection:bg-indigo-200 selection:text-indigo-900">
 
-    <header class="gradient-bg text-white py-12 px-6 text-center shadow-lg">
-        <p class="text-sm font-semibold tracking-widest uppercase mb-2">Group Presentation</p>
-        <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">The Origins of Israelite Monotheism</h1>
-        <p class="text-lg md:text-xl font-light opacity-90 mb-6">How God's revelation took shape in history</p>
-        <div class="inline-block bg-white text-blue-900 px-4 py-2 rounded-full text-sm font-semibold">
-            Jiwon • Cosmos • Yeseob
+    <header class="gradient-bg text-white py-16 px-6 text-center shadow-2xl relative overflow-hidden">
+        <div class="absolute top-[-50px] right-[-50px] w-40 h-40 bg-white opacity-5 rounded-full blur-2xl"></div>
+        <div class="absolute bottom-[-50px] left-[-50px] w-60 h-60 bg-blue-400 opacity-10 rounded-full blur-3xl"></div>
+        
+        <div class="relative z-10">
+            <span class="inline-block py-1 px-3 rounded-full bg-white/20 border border-white/30 text-xs font-semibold tracking-widest uppercase mb-4 backdrop-blur-sm">
+                Dr. Botta's Class
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight tracking-tight">The Origins of Israelite Monotheism</h1>
+            <p class="text-lg md:text-xl font-light opacity-90 mb-8">How God's revelation took shape in history</p>
+            <div class="inline-flex items-center space-x-2 bg-white text-indigo-900 px-5 py-2.5 rounded-full text-sm font-semibold shadow-md">
+                <span>🎤 Jiwon • Cosmos • Yeseob</span>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-3xl mx-auto px-6 py-10 space-y-12">
+    <main class="max-w-3xl mx-auto px-5 py-12 space-y-10">
 
-        <section class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100">
-            <h2 class="text-2xl font-bold text-blue-900 mb-4">The Core Question</h2>
-            <p class="text-gray-700 leading-relaxed text-lg">
-                How did ancient Israel develop an exclusive monotheistic faith in a polytheistic ancient Near East? We explore this through two distinct, yet complementary paradigms.
-            </p>
-        </section>
-
-        <section class="border-l-4 border-blue-500 pl-6">
-            <p class="text-sm font-bold text-blue-500 uppercase tracking-wide">Paradigm 1</p>
-            <h2 class="text-2xl font-bold mt-1 mb-3">Evolution & Convergence</h2>
-            <p class="text-gray-500 text-sm mb-4">Based on: Mark S. Smith, <i>The Early History of God</i></p>
-            <ul class="space-y-3 text-gray-700">
-                <li><strong>Convergence:</strong> Yahweh gradually absorbed the attributes of El (Creator, Father) and Baal (Storm God, Warrior).</li>
-                <li><strong>Evidence:</strong> Genesis 49, Psalm 29 (The "Canaanite Psalm"), and the Kuntillet Ajrud inscriptions ("Yahweh and his Asherah").</li>
-                <li><strong>Differentiation:</strong> Later prophets vigorously rejected Canaanite roots to establish strict monotheism.</li>
-            </ul>
-        </section>
-
-        <section class="border-l-4 border-indigo-600 pl-6">
-            <p class="text-sm font-bold text-indigo-600 uppercase tracking-wide">Paradigm 2</p>
-            <h2 class="text-2xl font-bold mt-1 mb-3">Crisis & Trauma</h2>
-            <p class="text-gray-500 text-sm mb-4">Based on: David M. Carr, <i>Holy Resilience</i></p>
-            <ul class="space-y-3 text-gray-700">
-                <li><strong>The Crucible of Exile (586 BCE):</strong> The destruction of Jerusalem posed a theological crisis. Did Marduk defeat Yahweh?</li>
-                <li><strong>Theodicy & Dtr2:</strong> Exilic editors reframed the disaster as God's sovereign punishment for breaking the covenant.</li>
-                <li><strong>Absolute Monotheism:</strong> Second Isaiah made the radical leap: Yahweh is the universal sovereign, and other gods do not exist.</li>
-            </ul>
-        </section>
-
-        <section class="bg-blue-50 p-8 rounded-2xl">
-            <h2 class="text-2xl font-bold text-blue-900 mb-4">Synthesis: A Complementary View</h2>
-            <p class="text-gray-700 leading-relaxed mb-4">
-                These models are not contradictory. Mark Smith provides the <strong>"Raw Materials"</strong> (cultural evolution and theological framework), while David Carr provides the <strong>"Crucible"</strong> (the catastrophic trauma that forced those materials into strict monotheism).
-            </p>
-            <p class="text-gray-700 font-semibold italic">
-                "Holy Resilience became the survival mechanism that allowed faith to endure historical traumas."
-            </p>
-        </section>
-
-        <section class="bg-gray-900 text-white p-8 rounded-2xl shadow-xl mt-8 relative overflow-hidden">
-            <div class="absolute top-0 right-0 opacity-10">
-                <svg width="120" height="120" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13.5H5.5L12 6.5z"/></svg>
-            </div>
-            <h2 class="text-2xl font-bold mb-6 text-indigo-300">Discussion Questions</h2>
-            <div class="space-y-6 relative z-10">
-                <div class="bg-white/10 p-5 rounded-lg border border-white/20">
-                    <p class="font-medium text-lg">1. Does the historical reality that faith evolved through "messy" cultural convergence and crisis threaten biblical authority, or does it beautifully illustrate an 'incarnational' revelation?</p>
+        <section class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300">
+            <div class="flex items-center space-x-3 mb-4">
+                <div class="p-2 bg-indigo-100 text-indigo-600 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8.228 9c.549-1.165 2.03-2 3.772-2 2.21 0 4 1.343 4 3 0 1.4-1.278 2.575-3.006 2.907-.542.104-.994.54-.994 1.093m0 3h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                 </div>
-                <div class="bg-white/10 p-5 rounded-lg border border-white/20">
-                    <p class="font-medium text-lg">2. Between cultural convergence and historical crisis, which model do you find more compelling, and why?</p>
+                <h2 class="text-2xl font-bold text-slate-900 serif">The Core Question</h2>
+            </div>
+            <p class="text-slate-600 leading-relaxed text-lg">
+                How did ancient Israel develop an exclusive monotheistic faith in a polytheistic ancient Near East? We will explore this through two distinct, yet complementary scholarly paradigms.
+            </p>
+        </section>
+
+        <section class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300">
+            <div class="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">Paradigm 1</div>
+            <h2 class="text-2xl font-bold text-slate-900 serif mb-2">Evolution & Convergence</h2>
+            <p class="text-slate-500 text-sm mb-6 flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                Mark S. Smith, The Early History of God
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-blue-800 flex items-center"><span class="text-xl mr-2">🤝</span> Convergence</h3>
+                    <p class="text-sm text-slate-600 mt-2">Yahweh absorbed the positive attributes of <b>El</b> (Creator) and <b>Baal</b> (Storm God/Warrior).</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-blue-800 flex items-center"><span class="text-xl mr-2">✂️</span> Differentiation</h3>
+                    <p class="text-sm text-slate-600 mt-2">Later prophets rigorously rejected Canaanite roots (like Asherah) to establish strict monotheism.</p>
+                </div>
+            </div>
+
+            <details class="bg-slate-50 rounded-xl border border-slate-200">
+                <summary class="p-4 font-semibold text-slate-700 flex justify-between items-center hover:bg-slate-100 transition-colors rounded-xl">
+                    <span>📖 Read Jiwon's Full Script & Evidence</span>
+                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <div class="p-4 pt-0 text-sm text-slate-600 space-y-3 border-t border-slate-200 mt-2 pt-4">
+                    <p><b>El (Canaanite High God):</b> We can see that El was the original god just by looking at their name: "Isra-el", not "Isra-yahweh". Genesis 49:24-25 identifies Yahweh with "El Shadday".</p>
+                    <p><b>Baal (Storm God):</b> Israelite kings needed a powerful national warrior-god. Psalm 29 (The "Canaanite Psalm") describes Yahweh using language originally dedicated to Baal.</p>
+                    <p><b>Asherah:</b> The Kuntillet Ajrud inscriptions contain a blessing: "I bless you by Yahweh of Samaria and his Asherah."</p>
+                    <hr class="my-2 border-slate-200">
+                    <p class="italic text-slate-500">"According to Smith, ancient Israel did not begin as strictly monotheistic. Instead, its religion developed over time through a process called 'Convergence'... Israelite monotheism was not a sudden event, but a gradual process of Convergence and Differentiation."</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100 hover:shadow-md transition-shadow duration-300">
+            <div class="inline-block bg-orange-100 text-orange-700 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-3">Paradigm 2</div>
+            <h2 class="text-2xl font-bold text-slate-900 serif mb-2">Crisis & Trauma in Exile</h2>
+            <p class="text-slate-500 text-sm mb-6 flex items-center">
+                <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.246 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                David M. Carr, Holy Resilience
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-orange-800 flex items-center"><span class="text-xl mr-2">🔥</span> The Crucible</h3>
+                    <p class="text-sm text-slate-600 mt-2">The destruction of Jerusalem (586 BCE) forced a massive theological leap to survive the trauma.</p>
+                </div>
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-100">
+                    <h3 class="font-bold text-orange-800 flex items-center"><span class="text-xl mr-2">⚖️</span> Theodicy</h3>
+                    <p class="text-sm text-slate-600 mt-2">Dtr2 & Ezekiel framed the disaster not as Yahweh's weakness, but as His sovereign judgment.</p>
+                </div>
+            </div>
+
+            <details class="bg-slate-50 rounded-xl border border-slate-200">
+                <summary class="p-4 font-semibold text-slate-700 flex justify-between items-center hover:bg-slate-100 transition-colors rounded-xl">
+                    <span>📖 Read Cosmos's Full Script & Evidence</span>
+                    <svg class="w-5 h-5 text-slate-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <div class="p-4 pt-0 text-sm text-slate-600 space-y-3 border-t border-slate-200 mt-2 pt-4">
+                    <p><b>Dtr2 & Ezekiel:</b> Taking responsibility for the trauma gave the exiles a sense of control. If disaster was punishment for disobedience, returning to Yahweh could bring restoration.</p>
+                    <p><b>Second Isaiah:</b> Made the radical leap that Yahweh is the ONLY God in the universe. He even called the Persian King Cyrus Yahweh's "Messiah" (anointed one).</p>
+                    <p><b>Isaiah 45:5:</b> "I am the LORD, and there is no other; besides me there is no god."</p>
+                    <hr class="my-2 border-slate-200">
+                    <p class="italic text-slate-500">"According to Carr, the true crucible of pure monotheism was the Babylonian Exile... They entered the exile worshipping a national god, but they survived it by worshipping the Universal Sovereign."</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="relative bg-gradient-to-br from-indigo-50 to-blue-100 p-8 rounded-3xl shadow-sm border border-indigo-100 overflow-hidden">
+            <div class="absolute -right-4 -bottom-4 text-indigo-200 opacity-50">
+                <svg class="w-32 h-32" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 22h20L12 2zm0 4.5l6.5 13.5H5.5L12 6.5z"/></svg>
+            </div>
+            <h2 class="text-2xl font-bold text-indigo-900 serif mb-4 relative z-10">A Complementary Synthesis</h2>
+            <div class="space-y-4 relative z-10 text-indigo-900/80">
+                <p>These two models are not contradictory. They are highly complementary.</p>
+                <ul class="list-disc pl-5 space-y-2 font-medium">
+                    <li><b>Mark S. Smith</b> provides the <b>Ingredients (Raw Materials)</b>: Cultural evolution provided the theological framework.</li>
+                    <li><b>David M. Carr</b> provides the <b>Crucible (Fire)</b>: The trauma of Exile was the ultimate catalyst that forged those materials into absolute monotheism.</li>
+                </ul>
+            </div>
+            
+            <details class="mt-6 bg-white/60 backdrop-blur-sm rounded-xl border border-white/50 relative z-10">
+                <summary class="p-4 font-semibold text-indigo-900 flex justify-between items-center hover:bg-white/80 transition-colors rounded-xl">
+                    <span>📖 Read Yeseob's Conclusion</span>
+                    <svg class="w-5 h-5 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </summary>
+                <div class="p-4 pt-0 text-sm text-indigo-800 space-y-3 border-t border-indigo-200/50 mt-2 pt-4">
+                    <p class="italic">"Both models show us that Israel's monotheism was forged in the messy and painful reality of human history. This act of 'Holy Resilience' became the survival mechanism that allowed Judaism and Christianity to endure historical traumas."</p>
+                    <p>As Dr. Botta has reminded us, understanding this history doesn't threaten us; it helps us bring a deeper, more grounded faith into our own communities today.</p>
+                </div>
+            </details>
+        </section>
+
+        <section class="bg-slate-900 text-white p-8 rounded-3xl shadow-xl mt-8 relative overflow-hidden">
+            <div class="flex items-center space-x-3 mb-6 relative z-10">
+                <div class="p-2 bg-indigo-500/20 text-indigo-300 rounded-lg">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8h2a2 2 0 012 2v6a2 2 0 01-2 2h-2v4l-4-4H9a1.994 1.994 0 01-1.414-.586m0 0L11 14h4a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2v4l.586-.586z"></path></svg>
+                </div>
+                <h2 class="text-2xl font-bold text-indigo-100 serif">Questions for Discussion</h2>
+            </div>
+            <div class="space-y-4 relative z-10">
+                <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700 hover:bg-slate-800 transition-colors">
+                    <div class="flex space-x-4">
+                        <span class="text-indigo-400 font-bold text-xl">Q1</span>
+                        <p class="font-medium text-slate-200 leading-relaxed">Does the historical reality that faith evolved through "messy" cultural convergence and crisis threaten biblical authority, or does it beautifully illustrate an 'incarnational' revelation?</p>
+                    </div>
+                </div>
+                <div class="bg-slate-800/50 p-5 rounded-2xl border border-slate-700 hover:bg-slate-800 transition-colors">
+                    <div class="flex space-x-4">
+                        <span class="text-indigo-400 font-bold text-xl">Q2</span>
+                        <p class="font-medium text-slate-200 leading-relaxed">Between cultural convergence and historical crisis, which model do you find more compelling, and why?</p>
+                    </div>
                 </div>
             </div>
         </section>
 
     </main>
 
-    <footer class="text-center py-8 text-gray-400 text-sm">
-        <p>Created for Dr. Botta's Class • Spring 2026</p>
+    <footer class="text-center py-10 text-slate-400 text-sm">
+        <p class="font-medium">Designed for Dr. Botta's Class • Spring 2026</p>
+        <p class="mt-1 opacity-75">By Jiwon, Cosmos, and Yeseob</p>
     </footer>
 
 </body>
